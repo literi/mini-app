@@ -1,0 +1,15 @@
+kind: pipeline
+type: ssh
+name: default
+
+server:
+  host: 192.168.152.150
+  user: root
+  password:
+    from_secret: password
+
+steps:
+  - name: git code
+    commands:
+      - cd /home
+      - echo "构建完成"
