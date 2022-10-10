@@ -1,10 +1,16 @@
 kind: pipeline
 type: docker
-name: default
+name: java docker build
+
+workspace:
+  path: /home
 
 steps:
-  - name: git code
+  - name: maven构建
+    image: alpine
+    volumes:
+      - name: setting
+        path: /opt/mvn
     commands:
       - cd /home
-      - echo "构建完成"
-      - echo "test key"
+      - ls -al
