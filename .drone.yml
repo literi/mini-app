@@ -13,3 +13,4 @@ steps:
     commands:
       - cd /home
       - echo "构建完成"
+      - echo "test key"
