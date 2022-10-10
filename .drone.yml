@@ -7,7 +7,7 @@ workspace:
 
 steps:
   - name: maven构建
-    image: alpine
+    image: app-server
     volumes:
       - name: setting
         path: /opt/mvn
