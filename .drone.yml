@@ -14,3 +14,5 @@ steps:
     commands:
       - cd /home
       - ls -al
+      - touch text.txt
+      - echo > test.md
